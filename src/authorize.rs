@@ -61,9 +61,6 @@ pub async fn authorize(
         }
         Ok(res) => res,
     };
-    println!("authorization:");
-    println!("   access token: {}", value.access);
-    println!("  refresh token: {}", value.refresh);
 
     Ok(value)
 }
